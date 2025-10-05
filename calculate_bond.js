@@ -446,6 +446,8 @@ document.addEventListener("DOMContentLoaded", function() {
     fetch('blue_archive_gift_img_path.csv').then(response => response.text()).then(data => parseGiftImgPathCSV(data));
     fetch('blue_archive_student_img_path.csv').then(response => response.text()).then(data => parseStudentImgPathCSV(data));
 
+    changeDetail();
+
     const menuCheckbox = document.getElementById("menu-btn");
     const menu = document.querySelector(".menu");
 
