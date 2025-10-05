@@ -1,21 +1,22 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ブルアカ 絆ランク皮算用</title>
+    <title>蔚蓝档案 好感等级计算</title>
     <link rel="stylesheet" href="./calculate_bond.css">
     <!-- <link rel="stylesheet" href="./select2.min.css"> -->
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>ブルーアーカイブ<br>絆ランク計算機</h1>
+            <h1>蔚蓝档案<br>好感等级计算器</h1>
         </header>
         <section class="description">
             <p>
-                ブルーアーカイブの絆関連の計算サイトです。<br>
-                お問い合わせとバグ報告は Xへ (@5atsukigomeari)
+                蔚蓝档案好感相关计算站。<br>
+                翻译自<a href="https://satsuki-gomeari.github.io/calculate_bond/" target="_blank" rel="noopener noreferrer">此项目</a>，感谢原作者贡献。<br>
+                <a href="https://github.com/k96e/calculate_bond_cn" target="_blank" rel="noopener noreferrer">GitHub仓库</a>
             </p>
         </section>
 
@@ -27,26 +28,26 @@
                 <input type="checkbox" class="menu-btn" id="menu-btn">
                 <label for="menu-btn" class="menu-icon"><span class="navicon"></span></label>
                 <ul class="menu">
-                    <li class="menu_tab" onclick="openTab(event, 'tab1')">どれだけ上がる?</li>
-                    <li class="menu_tab" onclick="openTab(event, 'tab4')">何が好き?</li>
-                    <li class="menu_tab" onclick="openTab(event, 'tab3')">何日必要?</li>
-                    <li class="menu_tab" onclick="openTab(event, 'tab2')">何個必要?</li>
+                    <li class="menu_tab" onclick="openTab(event, 'tab1')">能提升多少?</li>
+                    <li class="menu_tab" onclick="openTab(event, 'tab4')">喜欢什么?</li>
+                    <li class="menu_tab" onclick="openTab(event, 'tab3')">需要多少天?</li>
+                    <li class="menu_tab" onclick="openTab(event, 'tab2')">需要多少个?</li>
                 </ul>
             </header>
         </nav>
 
         <nav>
             <ul class="tabs">
-                <li class="tab" data-tab="tab1" onclick="openTab(event, 'tab1')">どれだけ上がる?</li>
-                <li class="tab" data-tab="tab4" onclick="openTab(event, 'tab4')">何が好き?</li>
-                <li class="tab" data-tab="tab3" onclick="openTab(event, 'tab3')">何日必要?</li>
-                <li class="tab" data-tab="tab2" onclick="openTab(event, 'tab2')">何個必要?</li>
+                <li class="tab" data-tab="tab1" onclick="openTab(event, 'tab1')">能提升多少?</li>
+                <li class="tab" data-tab="tab4" onclick="openTab(event, 'tab4')">喜欢什么?</li>
+                <li class="tab" data-tab="tab3" onclick="openTab(event, 'tab3')">需要多少天?</li>
+                <li class="tab" data-tab="tab2" onclick="openTab(event, 'tab2')">需要多少个?</li>
             </ul>
         </nav>
         <main>
             <section id="tab1" class="tab-content">
                 <form class="checkbox-detail_change_btn">
-                    <label class="checkbox-label" id="label-detail_change_btn"><b>詳細表示</b></label>
+                    <label class="checkbox-label" id="label-detail_change_btn"><b>显示详情</b></label>
                     <div class="btn btn-pill" id="detail_change_btn">
                         <input type="checkbox" class="checkbox" id="checkbox_detail_change_btn" onchange="changeDetail()" checked="checked"/>
                         <div class="knob">
@@ -57,22 +58,22 @@
                 </form>
                 <section class="description">
                     <p>
-                        現在保有している贈り物で、どれほど絆ランクが上がるかを計算します。<br>
-                        また、カフェタッチとスケジュールでの経験値も考慮して計算できます。
+                        计算当前拥有的礼物能将好感等级提升多少。<br>
+                        也可以将咖啡厅互动和日程的经验值考虑在内进行计算。
                     </p>
                 </section>
                 <form>
-                    <label id="label-student-name-tab1" for="select-student-name-tab1">生徒:</label>
+                    <label id="label-student-name-tab1" for="select-student-name-tab1">学生:</label>
                     <select class="student-name" name="student-name" id="select-student-name-tab1" onchange="changeStudentsList(-1)">
-                        <option value="default" selected>生徒を選んでください</option>
+                        <option value="default" selected>请选择学生</option>
                     </select>
                 </form>
                 <form>
-                    <label for="input1-tab1">現在の絆ランク(1~100):</label>
+                    <label for="input1-tab1">现在的好感等级(1~100):</label>
                     <input type="number" min="1" max="100" inputmode="decimal" id="input1-tab1" name="input1-tab1" value=1 onfocus="this.select();" oninput="javascript: this.value = this.value.slice(0, 3);">
                 </form>
                 <form>
-                    <label class="grid-gift_normal-detail_label"><b>贈り物保有数:</b></label>
+                    <label class="grid-gift_normal-detail_label"><b>拥有礼物数量:</b></label>
                 </form>
                 <form class="grid-gift_detail">
                     <div>
@@ -324,9 +325,9 @@
                 </form>
                 <form class="grid-form3">
                     <div class="grid-form3_label">
-                        <label class="grid-form3_label1" for="input11-tab1">カフェタッチ回数(/日):</label>
-                        <label class="grid-form3_label2" for="input12-tab1">スケジュール訪問回数(/日):</label>
-                        <label class="grid-form3_label3" for="input13-tab1">タッチ・訪問日数:</label>
+                        <label class="grid-form3_label1" for="input11-tab1">每日咖啡厅摸头次数:</label>
+                        <label class="grid-form3_label2" for="input12-tab1">每日日程访问次数:</label>
+                        <label class="grid-form3_label3" for="input13-tab1">上线天数:</label>
                     </div>
                     <div class="grid-form3_input">
                         <input type="number" min="0" max="10" inputmode="decimal" id="input11-tab1" name="input11-tab1" value=7 onfocus="this.select();" oninput="javascript: this.value = this.value.slice(0, 2);">
@@ -336,15 +337,15 @@
                 </form>
                 <form class="result-button-tab1">
                     <div>
-                        <button type="button" id="calc-button" onclick="updateResult('tab1')">計算する</button>
+                        <button type="button" id="calc-button" onclick="updateResult('tab1')">计算</button>
                     </div>
                     <div>
-                        <button type="button" id="input_reset-button" onclick="resetGiftNum()">リセット</button>
+                        <button type="button" id="input_reset-button" onclick="resetGiftNum()">重置</button>
                     </div>
                 </form>
                 <section class="result">
                     <div class="image-wrapper">
-                        <p id="result-display-tab1">ここに結果が表示されます。<br>計算ボタンを押してください。</p>
+                        <p id="result-display-tab1">按下计算按钮后，<br>结果将显示在这里。</p>
                         <img class="result-display-tab1-img">
                     </div>
                 </section>
@@ -352,32 +353,32 @@
             <section id="tab2" class="tab-content" style="display:none;">
                 <section class="description">
                     <p>
-                        指定日までに目標の絆ランクを達成したい場合、どれほど贈り物が必要になるか計算します。<br>
-                        「カズサの誕生日までに絆100達成できる?」などの目安に使えます。
+                        计算在某个日期之前您需要多少礼物才能达到目标好感等级。<br>
+                        可以用来回答「在学生生日之前可以达成百绊吗」这样的问题。
                     </p>
                 </section>
                 <form class="grid-form">
                     <div>
-                        <label for="input1-tab2">本日の日付:</label>
+                        <label for="input1-tab2">今日日期:</label>
                         <input type="date" id="input1-tab2" name="input1-tab2">
                     </div>
                     <div>
-                        <label for="input2-tab2">目標日:</label>
+                        <label for="input2-tab2">目标日期:</label>
                         <input type="date" id="input2-tab2" name="input2-tab2">
                     </div>
                     <div>
-                        <label for="input3-tab2">現在の絆ランク(1~100):</label>
+                        <label for="input3-tab2">现在的好感等级(1~100):</label>
                         <input type="number" min="1" max="100" inputmode="decimal" id="input3-tab2" name="input3-tab2" value=1 onfocus="this.select();" oninput="javascript: this.value = this.value.slice(0, 3);">
                     </div>
                     <div>
-                        <label for="input4-tab2">目標の絆ランク(1~100):</label>
+                        <label for="input4-tab2">目标的好感等级(1~100):</label>
                         <input type="number" min="1" max="100" inputmode="decimal" id="input4-tab2" name="input4-tab2" value=100 onfocus="this.select();" oninput="javascript: this.value = this.value.slice(0, 3);">
                     </div>
                 </form>
                 <form class="flex-form">
                     <div class="flex-form1">
-                        <label class="flex-form1-1" for="input5-tab2">1日あたりのカフェタッチ回数:</label>
-                        <label class="flex-form1-2" for="input6-tab2">1日あたりのスケジュール訪問回数:</label>
+                        <label class="flex-form1-1" for="input5-tab2">每日咖啡厅摸头次数:</label>
+                        <label class="flex-form1-2" for="input6-tab2">每日日程访问次数:</label>
                     </div>
                     <div class="flex-form2">
                         <input type="number" min="0" max="10" inputmode="decimal" id="input5-tab2" name="input5-tab2" value=7 onfocus="this.select();" oninput="javascript: this.value = this.value.slice(0, 2);">
@@ -385,33 +386,33 @@
                     </div>
                 </form>
                 <form>
-                    <button type="button" onclick="updateResult('tab2')">計算する</button>
+                    <button type="button" onclick="updateResult('tab2')">计算</button>
                 </form>
                 <section class="result">
-                    <p id="result-display-tab2">ここに結果が表示されます。<br>計算ボタンを押してください。</p>
+                    <p id="result-display-tab2">按下计算按钮后，<br>结果将显示在这里。</p>
                 </section>
             </section>
             <section id="tab3" class="tab-content" style="display:none;">
                 <section class="description">
                     <p>
-                        目標の絆ランク到達に、どれほど時間がかかるかを計算します。<br>
-                        初期値は、おおよそ現実的な数値かな?と思います。
+                        计算达到目标好感等级需要多长时间<br>
+                        下方的默认值是比较现实的数字。
                     </p>
                 </section>
                 <form class="grid-form">
                     <div>
-                        <label for="input1-tab3">現在の絆ランク(1~100):</label>
+                        <label for="input1-tab3">当前好感等级(1~100):</label>
                         <input type="number" min="1" max="100" inputmode="decimal" id="input1-tab3" name="input1-tab3" value=1 onfocus="this.select();" oninput="javascript: this.value = this.value.slice(0, 3);">                        
                     </div>
                     <div>
-                        <label for="input2-tab3">目標の絆ランク(1~100):</label>
+                        <label for="input2-tab3">目标好感等级(1~100):</label>
                         <input type="number" min="1" max="100" inputmode="decimal" id="input2-tab3" name="input2-tab3" value=100 onfocus="this.select();" oninput="javascript: this.value = this.value.slice(0, 3);">
                     </div>
                 </form>
                 <form>
                     <div class="tab3_form_label" id="radio-grid1">
-                        <label class="tab3_form_label_1" for="radio-grid1">贈り物の種類:</label>
-                        <label class="tab3_form_label_2" for="input3-tab3">1日に送る贈り物の想定個数:</label>
+                        <label class="tab3_form_label_1" for="radio-grid1">礼物种类:</label>
+                        <label class="tab3_form_label_2" for="input3-tab3">预计每日赠送礼物的数量:</label>
                     </div>
                     <div class="tab3_form_content">
                         <select class="gift-type" name="gift-type" id="select-gift-type">
@@ -427,8 +428,8 @@
                         <input type="number" min="1" max="9999" inputmode="decimal" id="input3-tab3" name="input3-tab3" value=5 onfocus="this.select();" oninput="javascript: this.value = this.value.slice(0, 4);">
                     </div>
                     <div class="tab3_form_content">
-                        <label class="tab3_form_label_1" for="input4-tab3">1日あたりのカフェタッチ回数:</label>
-                        <label class="tab3_form_label_2" for="input5-tab3">1日あたりのスケジュール訪問回数:</label>
+                        <label class="tab3_form_label_1" for="input4-tab3">每日咖啡厅摸头次数:</label>
+                        <label class="tab3_form_label_2" for="input5-tab3">每日日程访问次数:</label>
                     </div>
                     <div class="tab3_form_content">
                         <input type="number" min="0" max="10" inputmode="decimal" id="input4-tab3" name="input4-tab3" value=7 onfocus="this.select();" oninput="javascript: this.value = this.value.slice(0, 2);">
@@ -436,60 +437,60 @@
                     </div>                  
                 </form>
                 <form>
-                    <button type="button" onclick="updateResult('tab3')">計算する</button>
+                    <button type="button" onclick="updateResult('tab3')">计算</button>
                 </form>
                 <section class="result">
-                    <p id="result-display-tab3">ここに結果が表示されます。<br>計算ボタンを押してください。</p>
+                    <p id="result-display-tab3">按下计算按钮后，<br>结果将显示在这里。</p>
                 </section>
             </section>
             <section id="tab4" class="tab-content" style="display:none;">
                 <section class="description">
                     <p>
-                        どの生徒がどの贈り物を好きなのか、どの贈り物を製造に使ってよいのかを一覧にします。<br>
+                        列出哪些学生喜欢哪些礼物，以及可以用哪些礼物来合成礼物选择箱。<br>
                     </p>
                 </section>
                 <form id="student-gift-type_form">
                     <div class="tab3_form_label" id="radio-grid1">
-                        <label class="tab3_form_label_1" for="radio-grid1">生徒:</label>
+                        <label class="tab3_form_label_1" for="radio-grid1">学生:</label>
                     </div>
                     <div class="tab3_form_content">
                         <select class="student-name" name="student-name" id="select-student-name1" onchange="changeStudentsList(1)">
-                            <option value="default" selected>生徒を選んでください</option>
+                            <option value="default" selected>请选择学生</option>
                         </select>
                     </div>
                     <div id="student1">
                     </div>           
                     <div class="tab3_form_content">
                         <select class="student-name" name="student-name" id="select-student-name2" onchange="changeStudentsList(2)">
-                            <option value="default" selected>生徒を選んでください</option>
+                            <option value="default" selected>请选择学生</option>
                         </select>
                     </div>
                     <div id="student2">
                     </div>           
                     <div class="tab3_form_content">
                         <select class="student-name" name="student-name" id="select-student-name3" onchange="changeStudentsList(3)">
-                            <option value="default" selected>生徒を選んでください</option>
+                            <option value="default" selected>请选择学生</option>
                         </select>
                     </div>
                     <div id="student3">
                     </div>           
                     <div class="tab3_form_content">
                         <select class="student-name" name="student-name" id="select-student-name4" onchange="changeStudentsList(4)">
-                            <option value="default" selected>生徒を選んでください</option>
+                            <option value="default" selected>请选择学生</option>
                         </select>
                     </div>
                     <div id="student4">
                     </div>           
                     <div class="tab3_form_content">
                         <select class="student-name" name="student-name" id="select-student-name5" onchange="changeStudentsList(5)">
-                            <option value="default" selected>生徒を選んでください</option>
+                            <option value="default" selected>请选择学生</option>
                         </select>
                     </div>
                     <div id="student5">
                     </div>           
                 </form>
                 <section class="result">
-                    <p id="result-display-tab3">以下の贈り物を製造素材にしてください。</p>
+                    <p id="result-display-tab3">下面的礼物可以用作合成礼物选择箱。</p>
                 </section>
                 <div id="available-gift">
                 </div>
