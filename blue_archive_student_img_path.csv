@@ -1,6 +1,6 @@
 ﻿生徒名,パス
 爱理,./img/student/face/airi.png
-爱莉（乐队）,./img/student/face/airi_band.png
+爱理（乐队）,./img/student/face/airi_band.png
 青叶,./img/student/face/aoba.png
 茜,./img/student/face/akane.png
 茜（邦妮）,./img/student/face/akane_bunny.png
@@ -95,6 +95,7 @@
 白子（泳装）,./img/student/face/shiroko_swim.png
 白子＊恐怖,./img/student/face/shiroko_terror.png
 铃美,./img/student/face/suzumi.png
+铃美（魔法）,./img/student/face/suzumi_majical.png
 堇,./img/student/face/sumire.png
 堇（打工）,./img/student/face/sumire_job.png
 圣娅,./img/student/face/seia.png
@@ -222,11 +223,13 @@
 柚子（女仆）,./img/student/face/yuzu_maid.png
 好美,./img/student/face/yoshimi.png
 好美（乐队）,./img/student/face/yoshimi_band.png
+兰舞,./img/student/face/rabu.png
 莉音,./img/student/face/rio.png
-律,./img/peroro.png
+律,./img/student/face/ritsu.png
 瑠海,./img/student/face/rumi.png
 丽,./img/student/face/rei.png
 玲纱,./img/student/face/reisa.png
+玲纱（魔法）,./img/student/face/reisa_majical.png
 丽情,./img/student/face/reijo.png
 莲华,./img/student/face/renge.png
 莲华（泳装）,./img/student/face/renge_swim.png
