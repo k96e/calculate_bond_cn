@@ -664,6 +664,15 @@ function updateResult(tabId) {
         let required_p_m_num = calculator.calculateGiftNum(current_lv, target_lv, "gift_purple_m", cafe_touch_per_day, schedule_touch_per_day, diff);
         let required_p_l_num = calculator.calculateGiftNum(current_lv, target_lv, "gift_purple_l", cafe_touch_per_day, schedule_touch_per_day, diff);
         let required_p_ex_num = calculator.calculateGiftNum(current_lv, target_lv, "gift_purple_ex_l", cafe_touch_per_day, schedule_touch_per_day, diff);
+
+        if (required_o_s_num <= 0) {required_o_s_num = 0}
+        if (required_o_m_num <= 0) {required_o_m_num = 0}
+        if (required_o_l_num <= 0) {required_o_l_num = 0}
+        if (required_o_ex_num <= 0) {required_o_ex_num = 0}
+        if (required_p_s_num <= 0) {required_p_s_num = 0}
+        if (required_p_m_num <= 0) {required_p_m_num = 0}
+        if (required_p_l_num <= 0) {required_p_l_num = 0}
+        if (required_p_ex_num <= 0) {required_p_ex_num = 0}
         
         let required_ex = calculator.calculateRequiredEx(
             current_lv,
