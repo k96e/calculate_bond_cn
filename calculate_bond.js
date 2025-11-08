@@ -594,7 +594,12 @@ function updateResult(tabId) {
 
                 }
                 const gift_box_num = Number(document.getElementById('input-detail_gift_box').value);
-                gift_o_l_num += gift_box_num;
+                let max_gift_type = 0;
+                max_gift_type = Math.max(...personalGiftCompatibility.slice(1, 36).map(Number));
+                if(max_gift_type === 4) gift_o_ex_num += gift_box_num;
+                else if(max_gift_type === 3) gift_o_l_num += gift_box_num;
+                else if(max_gift_type === 2) gift_o_m_num += gift_box_num;
+                else if(max_gift_type === 1) gift_o_s_num += gift_box_num;
 
             }
             else {
