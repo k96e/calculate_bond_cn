@@ -599,7 +599,6 @@ function updateResult(tabId) {
                 // 水着ハナコ → BBクリーム = 橙特大 = 4
                 let max_gift_type = 0;
                 const gift_box_num = Number(document.getElementById('input-detail_gift_box').value);
-                let max_gift_type = 0;
                 max_gift_type = Math.max(...personalGiftCompatibility.slice(1, 36).map(Number));
                 if(max_gift_type === 4) gift_o_ex_num += gift_box_num;
                 else if(max_gift_type === 3) gift_o_l_num += gift_box_num;
