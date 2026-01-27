@@ -19,6 +19,7 @@
 绫音（泳装）,./img/student/face/ayane_swim.png
 爱丽丝,./img/student/face/arisu.png
 爱丽丝（女仆）,./img/student/face/arisu_maid.png
+アリス (臨戦),./img/peroro.png
 爱露,./img/student/face/aru.png
 爱露（礼服）,./img/student/face/aru_dress.png
 爱露（新年）,./img/student/face/aru_newyear.png
@@ -61,6 +62,7 @@
 绮罗罗,./img/student/face/kirara.png
 桐乃,./img/student/face/kirino.png
 桐乃（泳装）,./img/student/face/kirino_swim.png
+ケイ,./img/peroro.png
 心奈,./img/student/face/kokona.png
 小玉,./img/student/face/kotama.png
 小玉（露营）,./img/student/face/kotama_camp.png
@@ -96,6 +98,7 @@
 白子＊恐怖,./img/student/face/shiroko_terror.png
 铃美,./img/student/face/suzumi.png
 铃美（魔法）,./img/student/face/suzumi_majical.png
+昴,./img/student/face/subaru.png
 堇,./img/student/face/sumire.png
 堇（打工）,./img/student/face/sumire_job.png
 圣娅,./img/student/face/seia.png
@@ -107,6 +110,7 @@
 芹香（新年）,./img/student/face/serika_newyear.png
 芹娜,./img/student/face/serina.png
 芹娜（圣诞）,./img/student/face/serina_christmas.png
+贵音,./img/student/face/takane.png
 千秋,./img/student/face/chiaki.png
 切里诺,./img/student/face/cherino.png
 切里诺（温泉）,./img/student/face/cherino_hotspring.png
@@ -116,12 +120,14 @@
 千夏（温泉）,./img/student/face/chinatsu_hotspring.png
 千寻,./img/student/face/chihiro.png
 月咏,./img/student/face/tsukuyo.png
+月咏（礼服）,./img/student/face/tsukuyo_dress.png
 椿,./img/student/face/tsubaki.png
 椿（导游）,./img/student/face/tsubaki_guide.png
 鹤城,./img/student/face/tsurugi.png
 鹤城（泳装）,./img/student/face/tsurugi_swim.png
 时,./img/student/face/toki.png
 时（邦妮）,./img/student/face/toki_bunny.png
+トキ（臨戦）,./img/student/face/toki_battle.png
 巴,./img/student/face/tomoe.png
 巴（旗袍）,./img/student/face/tomoe_qipao.png
 渚,./img/student/face/nagisa.png
@@ -165,6 +171,7 @@
 日富美,./img/student/face/hifumi.png
 日富美（泳装）,./img/student/face/hifumi_swim.png
 日鞠,./img/student/face/himari.png
+ヒマリ（臨戦）,./img/student/face/himari_battle.png
 日和,./img/student/face/hiyori.png
 日和（泳装）,./img/student/face/hiyori_swim.png
 菲娜,./img/student/face/pina.png
@@ -192,6 +199,7 @@
 美咲,./img/student/face/misaki.png
 美咲（泳装）,./img/student/face/misaki_swim.png
 满,./img/student/face/michiru.png
+满（礼服）,./img/student/face/michiru_dress.png
 绿,./img/student/face/midori.png
 绿（女仆）,./img/student/face/midori_maid.png
 南,./img/student/face/mina.png
@@ -213,18 +221,20 @@
 萌绘（泳装）,./img/student/face/moe_swim.png
 红叶,./img/student/face/momiji.png
 桃,./img/student/face/momoi.png
-桃井（女仆）,./img/student/face/momoi_maid.png
+桃（女仆）,./img/student/face/momoi_maid.png
+八云,./img/student/face/yakumo.png
 优香,./img/student/face/yuuka.png
 优香（睡衣）,./img/student/face/yuuka_pajama.png
 优香（体操服）,./img/student/face/yuuka_sports.png
 紫,./img/student/face/yukari.png
-紫草（泳装）,./img/student/face/yukari_swim.png
+紫（泳装）,./img/student/face/yukari_swim.png
 柚子,./img/student/face/yuzu.png
 柚子（女仆）,./img/student/face/yuzu_maid.png
 好美,./img/student/face/yoshimi.png
 好美（乐队）,./img/student/face/yoshimi_band.png
 兰舞,./img/student/face/rabu.png
 莉音,./img/student/face/rio.png
+リオ（臨戦）,./img/student/face/rio_battle.png
 律,./img/student/face/ritsu.png
 瑠海,./img/student/face/rumi.png
 丽,./img/student/face/rei.png
